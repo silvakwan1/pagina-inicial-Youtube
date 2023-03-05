@@ -1,0 +1,89 @@
+@import url(./header.css);
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+body{
+    height: 100vh;
+    display: grid;
+    grid: 
+    "header header" 56px 
+    "saidebar main" 1fr 
+    /218px 1fr;
+}
+
+header{
+    grid-area: header;
+}
+
+main{
+    grid-area: main;
+    background-color: #1e1e1e10;
+}
+
+.select-video{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 40px;
+    padding: 40px 40px 0 44px;
+}
+
+.text-video p{
+    width: 150px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14.06px;
+
+}
+
+.text-video h3{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16.41px;
+    margin-bottom: 10px;
+}
+
+figure>img{
+    width: 250px;
+    height: 140.29px;
+}
+
+figcaption{
+    width: 249px;
+    display: flex;
+    gap: 10px;
+    margin-top: 16px;
+
+}
+
+figcaption>img{
+    align-self: self-start;
+}
+
+aside{
+    grid-area: saidebar;
+}
+
+aside nav ul{
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+
+aside nav ul a{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
